@@ -6,3 +6,14 @@ elif start > guess_me:
     print("too high")
 else:
     print("found it")
+
+guess_me = 7
+start = 1
+while start < guess_me:
+    print("too low")
+    start += 1
+    if guess_me == start:
+        print("found it")
+        break
+    elif guess_me < start:
+        print("too high")
