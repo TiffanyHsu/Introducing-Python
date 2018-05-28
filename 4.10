@@ -1,11 +1,12 @@
-def decorator_test(func):
+def decorator_test(here):
     def test():
         print("start")
-        func()
+        here()
+        print("end")
     return test
 
-def function():
-    print("end")
+def there():
+    print("hello")
 
-function = decorator_test(funciton)
-function()
+there = decorator_test(there)
+there()
