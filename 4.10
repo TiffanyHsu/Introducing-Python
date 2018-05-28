@@ -1,0 +1,11 @@
+def decorator_test(func):
+    def test():
+        print("start")
+        func()
+    return test
+
+def function():
+    print("end")
+
+function = decorator_test(funciton)
+function()
